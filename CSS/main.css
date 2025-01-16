@@ -17,3 +17,25 @@ ul {
     width: 1170px;
     margin: 0 auto;
 }
+
+
+
+/* header */
+
+.triangle-border {
+    position: relative;
+    display: inline-block; /* Adjust layout if necessary */
+    padding: 10px; /* Add spacing around the image */
+    border-right: 2px solid #884491; /* Placeholder for alignment */
+    border-top: 2px solid #884491; /* Placeholder for alignment */
+    border-radius: 0px 35px 0px 0px;
+  }
+
+  
+
+  /* baner */
+  .bg-baner-index{
+    background-image: url('../images/index-baner.png');
+    width: 100vw;
+    height: 90vh;
+  }
