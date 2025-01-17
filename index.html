@@ -19,6 +19,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch:wght@400&display=swap" rel="stylesheet">
+
+
     <!-- Slick Carousel CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
@@ -39,152 +44,537 @@
 
     <!-- Header -->
     <header
-        class='flex shadow-[0px_0px_16px_rgba(17,_17,_26,_0.1)] py-4 px-4 sm:px-6 bg-white font-sans min-h-[70px] tracking-wide relative z-50'>
-        <div class='flex flex-wrap items-center justify-between gap-4 w-full max-w-screen-xl mx-auto'>
-            <a href="javascript:void(0)" class="max-sm:hidden triangle-border">
-                <img src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
-            </a>
-            <a href="javascript:void(0)" class="hidden max-sm:block triangle-border">
-                <img src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
-            </a>
+    class='flex shadow-[0px_0px_16px_rgba(17,_17,_26,_0.1)] py-4 px-4 sm:px-6 bg-white font-sans min-h-[70px] tracking-wide relative z-50'>
+    <div class='flex flex-wrap items-center justify-between gap-4 w-full max-w-screen-xl mx-auto'>
+        <a href="javascript:void(0)" class="max-sm:hidden triangle-border">
+            <img src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
+        </a>
+        <a href="javascript:void(0)" class="hidden max-sm:block triangle-border">
+            <img src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
+        </a>
 
+        <div id="collapseMenu"
+            class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+            <button id="toggleClose"
+                class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black" viewBox="0 0 320.591 320.591">
+                    <path
+                        d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                        data-original="#000000"></path>
+                    <path
+                        d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                        data-original="#000000"></path>
+                </svg>
+            </button>
 
-            <div id="collapseMenu"
-                class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
-                <button id="toggleClose"
-                    class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black"
-                        viewBox="0 0 320.591 320.591">
-                        <path
-                            d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
-                            data-original="#000000"></path>
-                        <path
-                            d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-                            data-original="#000000"></path>
-                    </svg>
-                </button>
-
-                <ul
-                    class='lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
-                    <li class='mb-6 hidden max-lg:block'>
-                        <a href="javascript:void(0)" class="triangle-border"><img
-                                src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
-                        </a>
-                    </li>
-                    <li class='max-lg:border-b max-lg:py-3 px-3'>
-                        <a href='javascript:void(0)'
-                            class='hover:text-[#843d8d] text-[#843d8d] font-bold block text-base'>Home</a>
-                    </li>
-                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>About us </a>
-                    </li>
-                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Why Choose Us </a>
-                    </li>
-                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Admissions </a>
-                    </li>
-                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Blogs</a>
-                    </li>
-                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
-                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Contact Us </a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class='flex items-center max-lg:ml-auto space-x-4'>
-                <button type="button"
-                    class="bg-[#843d8d] hover:bg-[#843d8d] px-4 py-2 rounded text-white text-[15px] font-semibold flex items-center justify-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                        class="cursor-pointer fill-white inline w-4 h-4">
-                        <circle cx="10" cy="7" r="6" data-original="#000000" />
-                        <path
-                            d="M14 15H6a5 5 0 0 0-5 5 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 5 5 0 0 0-5-5zm8-4h-2.59l.3-.29a1 1 0 0 0-1.42-1.42l-2 2a1 1 0 0 0 0 1.42l2 2a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42l-.3-.29H22a1 1 0 0 0 0-2z"
-                            data-original="#000000" />
-                    </svg>
-                    Enquire Now <i class="fa-solid fa-arrow-right"></i>
-                </button>
-
-                <button id="toggleOpen" class='lg:hidden'>
-                    <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </div>
+            <ul
+                class='lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+                <li class='mb-6 hidden max-lg:block'>
+                    <a href="javascript:void(0)" class="triangle-border"><img
+                            src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
+                    </a>
+                </li>
+                <li class='max-lg:border-b max-lg:py-3 px-3'>
+                    <a href='javascript:void(0)' class='hover:text-[#843d8d] text-[#843d8d] font-bold block text-base'>Home</a>
+                </li>
+                <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+                        class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>About us</a></li>
+                <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+                        class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Why Choose Us</a></li>
+                <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+                        class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Admissions</a></li>
+                <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+                        class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Blogs</a></li>
+                <li class='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+                        class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Contact Us</a></li>
+                <!-- Enquire Button -->
+                <li class='mt-4'>
+                    <button type="button"
+                        class="bg-[#843d8d] hover:bg-[#843d8d] px-4 py-2 rounded text-white text-[15px] font-semibold flex items-center justify-center gap-2 w-full">
+                        Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </li>
+            </ul>
         </div>
-    </header>
+
+        <div class='flex items-center max-lg:ml-auto space-x-4'>
+            <button type="button"
+                class="bg-[#843d8d] hover:bg-[#843d8d] px-4 py-2 rounded text-white text-[15px] font-semibold flex items-center justify-center gap-2 lg:block hidden">
+                Enquire Now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <button id="toggleOpen" class='lg:hidden'>
+                <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+</header>
+
     <!-- header-end -->
     <main>
         <!-- baner-section -->
-         <section class="bg-baner-index">
-             <div class="container">
-                <div>
-                <div class="flex">
-                    <h4 class="text-[#1B7BE2] font-jost text-[22px] font-bold leading-[31.79px]">
-                        Let’s Education
-                    </h4>
-                    <img src="./images/Group.png" alt="flower" class="w-[24px] h-[24px] object-contain mx-3">
+        <section class="bg-baner-index">
+            <div class="container h-screen flex items-center">
+                <div class="flex items-center text-left">
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <h4 class="text-[#1B7BE2] font-jost text-[18px] font-bold leading-[31.79px] sm:text-[18px] md:text-[20px] lg:text-[22px]">
+                                Let’s Education
+                            </h4>
+                            <img src="./images/Group.png" alt="flower" class="w-[24px] h-[24px] object-contain mx-3">
+                        </div>
+                        <h1 class="font-inter text-[40px] font-bold leading-[80px] tracking-[-0.01em] text-white mb-4 sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px]">
+                            Free Online Courses<br>From The Experts
+                        </h1>
+                        <p class="font-inter text-[14px] font-normal leading-[24px] text-white mb-6 sm:text-[14px] md:text-[16px] lg:text-[18px]">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting <br> industry. Lorem Ipsum
+                            has
+                            been the industry's standard.
+                        </p>
+                        <div class="flex gap-4">
+                            <button type="button"
+                                class="bg-[#843d8d] hover:bg-[#843d8d] px-4 py-2 rounded text-white text-[15px] font-semibold flex items-center justify-center gap-2 sm:text-[14px] md:text-[15px] lg:text-[15px]">
+                                Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+        
+                            <button type="button"
+                                class="bg-transparent hover:bg-[white] border-2 border-white px-4 py-2 rounded text-white hover:text-[#843d8d] text-[15px] font-semibold flex items-center justify-center gap-2 sm:text-[14px] md:text-[15px] lg:text-[15px]">
+                                Download Brochure <i class="fa-solid fa-download"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h1 class="font-inter text-[70px] font-bold leading-[80px] tracking-[-0.01em] text-white break-words">
-                        Free Online Courses<br>From The Experts
-                    </h1>              
-                    
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
-                    </p>
-                </div>
-                <div>
-
-                </div>
-                </div>
-             </div>
-         </section>
+            </div>
+        </section>
         <!-- baner-section-end -->
-    </main>
-    <footer>
 
-    </footer>
-    <!-- Header-end -->
+        <!-- baner-section-2-->
+        <section class="bg-[#f9f7f7]">
+            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4 px-4 py-20">
+                <!-- Left Column - Image -->
+                <div class="flex justify-center items-center">
+                    <img src="./images/baner-2.png" alt="baner-2" class="max-w-full h-full w-full object-cover">
+                </div>
 
-    <!-- LINK SCRIPT SRC  -->
+                <!-- Right Column - Text Content -->
+                <div class="flex justify-center items-center p-3">
+                    <div class="text-left w-full">
+                        <div class="mb-4 flex items-center">
+                            <h4
+                                class="text-[#1B7BE2] font-jost text-[18px] sm:text-[22px] xl:text-[25px] font-bold leading-[28px] sm:leading-[31.79px]">
+                                About the Education School
+                            </h4>
+                            <img src="./images/flower-2.png" alt="flower" class="w-[24px] h-[24px] object-contain mx-3">
+                        </div>
 
-    <!-- SCRIPT -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./js/jquery.js"></script>
-    <script src="./js/slick.js"></script>
-    <script src="./js/main.js"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    container: {
-                        padding: {
-                            DEFAULT: "1rem",
-                            sm: "2rem",
-                            lg: "4rem",
-                            xl: "5rem",
-                            "2xl": "6rem",
+                        <h1
+                            class="font-inter text-[30px] sm:text-[20px]  xl:text-[40px]   font-bold leading-[14px] sm:leading-[20px] text-[#3D3D3D] mb-4 py-3">
+                            Podar Education Network
+                        </h1>
+                        <p
+                            class="font-inter text-[15px] sm:text-[18px]  xl:text-[20px] font-normal leading-[25px] sm:leading-[20px] xl:leading-[25px] text-left text-[#9B9999] mb-4">
+                            Educating 2,30,000 students through 144 Podar International Schools, Podar Partner Schools,
+                            Podar Education Network has established itself as a leader in the education sector.
+                            Established in 1927, Podar Education Network’s aim is not just to impart knowledge but to
+                            foster the growth of responsible, well-rounded, and lifelong learners who can contribute
+                            positively to society.
+                        </p>
+                        <p
+                            class="font-inter text-[15px] sm:text-[18px] xl:text-[20px] font-normal leading-[25px] sm:leading-[20px]  xl:leading-[25px] text-left text-[#9B9999] mb-6">
+                            Educating 2,30,000 students through 144 Podar International Schools, Podar Partner Schools,
+                            Podar Education Network has established itself as a leader in the education sector.
+                            Established in 1927, Podar Education Network’s aim is not just to impart knowledge but to
+                            foster the growth of responsible, well-rounded, and lifelong learners who can contribute
+                            positively to society.
+                        </p>
+
+                        <button type="button"
+                            class="bg-[#0c54a0] hover:bg-white px-6 py-3 sm:px-4 sm:py-2 rounded border-2 border-[#0c54a0] text-white hover:text-[#0c54a0] text-[14px] sm:text-[15px] font-semibold flex items-center justify-center gap-2 transition-colors">
+                            Read More <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- baner-section-end-2 -->
+
+        <!-- admision start -->
+        <section class="bg-[#f9f7f7]">
+            <div class="container mx-auto grid grid-cols-1 gap-4 px-4 py-20">
+                <div>
+                    <div class="flex p-5 items-center justify-center">
+                        <h4 class="text-[#1B7BE2] font-jost text-[18px] sm:text-[22px] font-bold leading-[28px] sm:leading-[31.79px]">
+                            Admissions
+                        </h4>
+                        <img src="./images/flower-2.png" alt="flower" class="w-[22px] h-[22px] object-contain mx-3">
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row px-5 items-center sm:items-start justify-between">
+                        <div>
+                            <!-- Title Section -->
+                            <h1 class="font-inter text-wrap text-[20px] sm:text-[25px] md:text-[35px] lg:text-[43px] font-bold leading-[32px] sm:leading-[38px] md:leading-[40px] lg:leading-[50px] text-center sm:text-left text-[#3D3D3D] w-full">
+                                Information On Podar International School
+                            </h1>
+                        </div>
+                    
+                        <!-- Button Section -->
+                        <div class="flex sm:flex-row  justify-center gap-4 mt-4 sm:mt-0 sm:justify-start">
+                            <!-- Previous Button -->
+                            <div class="swiper-button-prev-doc w-10 h-10 bg-[#0c54a0] rounded-full flex items-center justify-center text-white">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <!-- Next Button -->
+                            <div class="swiper-button-next-doc w-10 h-10 bg-[#0c54a0] rounded-full flex items-center justify-center text-white">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="swiper blog-slider">
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide p-5">
+                                <div class="bg-white shadow-md p-6 w-full rounded-md bg-card">
+                                    <div class="flex items-start p-5">
+                                        <div class="bg-[#dac5dd] rounded-md p-7 bg-icon">
+                                            <i class="fa-solid fa-location-dot text-[#853d8d] text-2xl"></i>
+                                        </div>
+                                        <div class="ml-auto text-end font-londrina text-[70px] font-[400] leading-[80px] text-gray-200">
+                                            01
+                                        </div>
+                                    </div>
+                                    <h2 class="mt-4 font-jost text-[24px] sm:text-[26px] md:text-[28px] font-bold text-left text-gray-800">Locations</h2>
+                                    <p class="mt-2 text-[15px] font-normal text-left text-gray-500">
+                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
+                                    </p>
+                                </div>
+                            </div>
+        
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide p-5">
+                                <div class="bg-white shadow-md p-6 w-full rounded-md bg-card">
+                                    <div class="flex items-start p-5">
+                                        <div class="bg-[#dac5dd] rounded-md p-7 bg-icon">
+                                            <i class="fa-solid fa-indian-rupee-sign text-[#853d8d] text-2xl"></i>
+                                        </div>
+                                        <div class="ml-auto text-end font-londrina text-[70px] font-[400] leading-[80px] text-gray-200">
+                                            02
+                                        </div>
+                                    </div>
+                                    <h2 class="mt-4 font-jost text-[24px] sm:text-[26px] md:text-[28px] font-bold text-left text-gray-800">Fee Structure</h2>
+                                    <p class="mt-2 text-[15px] font-normal text-left text-gray-500">
+                                        Our curriculum ensures excellence in education for all students.
+                                    </p>
+                                </div>
+                            </div>
+        
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide p-5">
+                                <div class="bg-white shadow-md p-6 w-full rounded-md bg-card">
+                                    <div class="flex items-start p-5">
+                                        <div class="bg-[#dac5dd] rounded-md p-7 bg-icon">
+                                            <i class="fa-solid fa-user-plus text-[#853d8d] text-2xl"></i>
+                                        </div>
+                                        <div class="ml-auto text-end font-londrina text-[70px] font-[400] leading-[80px] text-gray-200">
+                                            03
+                                        </div>
+                                    </div>
+                                    <h2 class="mt-4 font-jost text-[24px] sm:text-[26px] md:text-[28px] font-bold text-left text-gray-800">Admission Process</h2>
+                                    <p class="mt-2 text-[15px] font-normal text-left text-gray-500">
+                                        Our curriculum ensures excellence in education for all students.
+                                    </p>
+                                </div>
+                            </div>
+        
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide p-5">
+                                <div class="bg-white shadow-md p-6 w-full rounded-md bg-card">
+                                    <div class="flex items-start p-5">
+                                        <div class="bg-[#dac5dd] rounded-md p-7 bg-icon">
+                                            <i class="fa-solid fa-file-pen text-[#853d8d] text-2xl"></i>
+                                        </div>
+                                        <div class="ml-auto text-end font-londrina text-[70px] font-[400] leading-[80px] text-gray-200">
+                                            04
+                                        </div>
+                                    </div>
+                                    <h2 class="mt-4 font-jost text-[24px] sm:text-[26px] md:text-[28px] font-bold text-left text-gray-800">Enquiry Form</h2>
+                                    <p class="mt-2 text-[15px] font-normal text-left text-gray-500">
+                                        Our curriculum ensures excellence in education for all students.
+                                    </p>
+                                </div>
+                            </div>
+        
+                            <!-- Slide 5 -->
+                            <div class="swiper-slide p-5">
+                                <div class="bg-white shadow-md p-6 w-full rounded-md bg-card">
+                                    <div class="flex items-start p-5">
+                                        <div class="bg-[#dac5dd] rounded-md p-7 bg-icon">
+                                            <i class="fa-solid fa-location-dot text-[#853d8d] text-2xl"></i>
+                                        </div>
+                                        <div class="ml-auto text-end font-londrina text-[70px] font-[400] leading-[80px] text-gray-200">
+                                            05
+                                        </div>
+                                    </div>
+                                    <h2 class="mt-4 font-jost text-[24px] sm:text-[26px] md:text-[28px] font-bold text-left text-gray-800">Locations</h2>
+                                    <p class="mt-2 text-[15px] font-normal text-left text-gray-500">
+                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Swiper Pagination -->
+                        <div class="swiper-pagination mt-4"></div>
+        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- admision end -->
+
+        <!-- Journey Education School-start -->
+        <section class="bg-blu">
+            <div class="container mx-auto grid grid-cols-1 gap-4 px-4 py-20">
+                <div>
+                    <div class="flex p-5 items-center justify-center">
+                        <h4
+                            class="text-[#1B7BE2] font-jost text-[18px] sm:text-[22px] font-bold leading-[28px] sm:leading-[31.79px]">
+                            Journey Education School
+                        </h4>
+                        <img src="./images/flower-2.png" alt="flower" class="w-[22px] h-[22px] object-contain mx-3">
+                    </div>
+                    <div class="flex px-5 items-center justify-center">
+                        <h1
+                            class="font-inter text-center text-[30px] md:text-[40px] lg:text-[50px] font-bold leading-snug md:leading-[45px] lg:leading-[55px] text-[#3D3D3D] max-w-3xl">
+                            A Glimpse Into A Student’s Journey At Podar
+                        </h1>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif]">
+                        <div>
+                            <img src="./images/student-1.png" class="w-full" alt="Card Image" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-gray-800 text-xl font-bold">Symphonices</h3>
+                            <p class="mt-4 text-sm text-gray-500 leading-relaxed mb-5">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Sed auctor auctor
+                                arcu, at fermentum dui. Maecenas Lorem ipsum dolor sit amet.
+                            </p>
+                            <button type="button"
+                                class="bg-[#0c54a0] hover:bg-white px-6 py-3 sm:px-4 sm:py-2 rounded border-2 border-[#0c54a0] text-white hover:text-[#0c54a0] text-[14px] sm:text-[15px] font-semibold flex items-center justify-center gap-2 transition-colors">
+                                Read More <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif]">
+                        <div>
+                            <img src="./images/student-2.png" class="w-full" alt="Card Image" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-gray-800 text-xl font-bold">Remedial Learing</h3>
+                            <p class="mt-4 text-sm text-gray-500 leading-relaxed mb-5">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Sed auctor auctor
+                                arcu, at fermentum dui. Maecenas Lorem ipsum dolor sit amet.
+                            </p>
+                            <button type="button"
+                                class="bg-[#0c54a0] hover:bg-white px-6 py-3 sm:px-4 sm:py-2 rounded border-2 border-[#0c54a0] text-white hover:text-[#0c54a0] text-[14px] sm:text-[15px] font-semibold flex items-center justify-center gap-2 transition-colors">
+                                Read More <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif]">
+                        <div>
+                            <img src="./images/student-3.png" class="w-full" alt="Card Image" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-gray-800 text-xl font-bold">Spell The Beans</h3>
+                            <p class="mt-4 text-sm text-gray-500 leading-relaxed mb-5">Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Sed auctor auctor
+                                arcu, at fermentum dui. Maecenas Lorem ipsum dolor sit amet.
+                            </p>
+                            <button type="button"
+                                class="bg-[#0c54a0] hover:bg-white px-6 py-3 sm:px-4 sm:py-2 rounded border-2 border-[#0c54a0] text-white hover:text-[#0c54a0] text-[14px] sm:text-[15px] font-semibold flex items-center justify-center gap-2 transition-colors">
+                                Read More <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif]">
+                        <div>
+                            <img src="./images/student-4.png" class="w-full" alt="Card Image" />
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-gray-800 text-xl font-bold">Symphonices</h3>
+                            <p class="mt-4 text-sm text-gray-500 leading-relaxed mb-5">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu, at
+                                fermentum dui. Maecenas
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                            <button type="button"
+                                class="bg-[#0c54a0] hover:bg-white px-6 py-3 sm:px-4 sm:py-2 rounded border-2 border-[#0c54a0] text-white hover:text-[#0c54a0] text-[14px] sm:text-[15px] font-semibold flex items-center justify-center gap-2 transition-colors">
+                                Read More <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Journey Education School-end -->
+
+
+         <!-- admision start -->
+         <section class="bg-[#f9f7f7]">
+            <div class="container mx-auto px-4 py-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <!-- Left Column - Image -->
+                    <div class="flex justify-center items-center">
+                        <img src="./images/why-us.png" alt="banner-2" class="h-full max-w-full object-cover rounded-lg">
+                    </div>
+                    
+                    <!-- Right Column - Text Content -->
+                    <div class="flex justify-center items-center px-4 sm:px-8 lg:px-8">
+                        <div class="w-full text-left">
+                            
+                            <!-- Section Title -->
+                            <div class="mb-6 flex items-center">
+                                <h4 class="text-[#1B7BE2] font-jost text-[14px] sm:text-[16px] lg:text-[20px] font-bold leading-tight">
+                                    Why Choose Us
+                                </h4>
+                                <img src="./images/flower-2.png" alt="flower" class="w-[20px] h-[20px] object-contain mx-3">
+                            </div>
+                            
+                            <!-- Main Heading -->
+                            <h1 class="font-inter text-[18px] sm:text-[22px] md:text-[26px] lg:text-[30px] font-bold leading-tight text-[#3D3D3D] mb-6 text-center sm:text-left">
+                                Discover the Excellence of Podar Education
+                            </h1>
+                            
+                            <!-- Features List -->
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pb-6">
+                                <!-- Item 1 -->
+                                <div class="flex items-center">
+                                    <img src="./images/dot.png" alt="dot" class="w-[14px] h-[14px]">
+                                    <p class="font-inter text-[14px] sm:text-[16px] font-semibold text-[#000] pl-3">The Right Curriculum</p>
+                                </div>
+                                <!-- Item 2 -->
+                                <div class="flex items-center">
+                                    <img src="./images/dot.png" alt="dot" class="w-[14px] h-[14px]">
+                                    <p class="font-inter text-[14px] sm:text-[16px] font-semibold text-[#000] pl-3">The Right Faculty</p>
+                                </div>
+                                <!-- Item 3 -->
+                                <div class="flex items-center">
+                                    <img src="./images/dot.png" alt="dot" class="w-[14px] h-[14px]">
+                                    <p class="font-inter text-[14px] sm:text-[16px] font-semibold text-[#000] pl-3">The Right Environment</p>
+                                </div>
+                                <!-- Item 4 -->
+                                <div class="flex items-center">
+                                    <img src="./images/dot.png" alt="dot" class="w-[14px] h-[14px]">
+                                    <p class="font-inter text-[14px] sm:text-[16px] font-semibold text-[#000] pl-3">The Right Approach</p>
+                                </div>
+                                <!-- Item 5 -->
+                                <div class="flex items-center">
+                                    <img src="./images/dot.png" alt="dot" class="w-[14px] h-[14px]">
+                                    <p class="font-inter text-[14px] sm:text-[16px] font-semibold text-[#000] pl-3">The Right Skills</p>
+                                </div>
+                            </div>
+            
+                            <!-- Button -->
+                            <button type="button" class="bg-[#0c54a0] hover:bg-white text-white hover:text-[#0c54a0] border-2 border-[#0c54a0] px-6 py-3 rounded text-[14px] sm:text-[15px] font-semibold flex items-center justify-center gap-2 transition-colors">
+                                Read More <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- admision end -->
+
+        <footer>
+
+        </footer>
+        <!-- Header-end -->
+
+        <!-- LINK SCRIPT SRC  -->
+
+        <!-- SCRIPT -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/jquery.js"></script>
+        <script src="./js/slick.js"></script>
+        <script src="./js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                const swiper = new Swiper('.blog-slider', {
+                    loop: true,
+                    autoplay: {
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    },
+                    breakpoints: {
+                        320: {
+                            slidesPerView: 1,
+                        },
+                        640: {
+                            slidesPerView: 2,
+                        },
+                        1024: {
+                            slidesPerView: 4,
                         },
                     },
-                    fontFamily: {
-                        sans: ['"Josefin Sans"', "sans-serif"],
-                        josefin: ['"Josefin Sans"', "sans-serif"],
-                        antonio: ['"Antonio Fischer"', "cursive"],
-                        italiana: ['"Italiana"', "serif"],
+                    navigation: {
+                        nextEl: '.swiper-button-next-doc',
+                        prevEl: '.swiper-button-prev-doc',
                     },
-                    backgroundImage: {
-                        "gradient-border":
-                            "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1D71B8 100%)",
+                });
+            });
+        </script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        container: {
+                            padding: {
+                                DEFAULT: "1rem",
+                                sm: "2rem",
+                                lg: "4rem",
+                                xl: "5rem",
+                                "2xl": "6rem",
+                            },
+                        },
+                        fontFamily: {
+                            sans: ['"Josefin Sans"', "sans-serif"],
+                            josefin: ['"Josefin Sans"', "sans-serif"],
+                            antonio: ['"Antonio Fischer"', "cursive"],
+                            italiana: ['"Italiana"', "serif"],
+                            londrina: ['"Londrina Sketch"', 'cursive'],
+                        },
+                        backgroundImage: {
+                            "gradient-border":
+                                "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #1D71B8 100%)",
+                        },
                     },
                 },
-            },
-        };
-    </script>
+            };
+        </script>
 
 </body>
 
