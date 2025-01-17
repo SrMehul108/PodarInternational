@@ -117,3 +117,13 @@ ul {
     background: rgb(249,247,247);
     background: linear-gradient(180deg, rgba(249,247,247,1) 0%, rgba(12,84,160,1) 100%);
 }
+
+
+
+
+
+
+
+.bg-baner-quick {
+  background-image: url('../images/quick-img.png');
+}
