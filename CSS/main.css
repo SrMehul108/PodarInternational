@@ -123,3 +123,7 @@ ul {
 .bg-baner-quick {
   background-image: url('../images/quick-img.png');
 }
+
+.last-section{
+  background-image: url('../images/last-section.png');
+}
