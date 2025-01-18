@@ -17,6 +17,10 @@ ul {
   margin: 0 auto;
 }
 
+body{
+  background-color: #f2f2f2;
+}
+
 /* header */
 
 .triangle-border {
@@ -31,7 +35,7 @@ ul {
 /* baner */
 .bg-baner-index {
   background-image: url("../images/index-baner.png");
-  width: 100vw;
+  width: 100%;
   height: 90vh;
 }
 

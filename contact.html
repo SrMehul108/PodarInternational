@@ -4,12 +4,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/contactus.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <title>Get In Touch</title>
 </head>
 
 <body>
+    <header
+        class='flex shadow-[0px_0px_16px_rgba(17,_17,_26,_0.1)] py-4 px-4 sm:px-6 bg-white font-sans min-h-[70px] tracking-wide relative z-50'>
+        <div class='flex flex-wrap items-center justify-between gap-4 w-full max-w-screen-xl mx-auto'>
+            <a href="./index.html" class="max-sm:hidden triangle-border">
+                <img src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
+            </a>
+            <a href="./index.html" class="hidden max-sm:block triangle-border">
+                <img src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
+            </a>
+
+            <div id="collapseMenu"
+                class='max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50'>
+                <button id="toggleClose"
+                    class='lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 fill-black"
+                        viewBox="0 0 320.591 320.591">
+                        <path
+                            d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                            data-original="#000000"></path>
+                        <path
+                            d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                            data-original="#000000"></path>
+                    </svg>
+                </button>
+
+                <ul
+                    class='lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
+                    <li class='mb-6 hidden max-lg:block'>
+                        <a href="" class="triangle-border"><img
+                                src="./images/podar-logo-3x-removebg-preview 1.png" alt="logo" class='w-36' />
+                        </a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'>
+                        <a href='./index.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Home</a>
+                    </li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href=''
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>About us</a></li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./why-choose-us.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Why Choose Us</a></li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href=''
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Admissions</a></li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./blogs.html'
+                            class='hover:text-[#007bff] text-gray-600 font-bold block text-base'>Blogs</a></li>
+                    <li class='max-lg:border-b max-lg:py-3 px-3'><a href='./contact.html'
+                            class='hover:text-[#843d8d] text-[#843d8d] font-bold block text-base'>Contact Us</a></li>
+                    <!-- Enquire Button -->
+                    <li class='mt-4 lg:hidden'>
+                        <button type="button"
+                            class="bg-[#843d8d] hover:bg-[#843d8d] px-4 py-2 rounded text-white text-[15px] font-semibold flex items-center justify-center gap-2 w-full">
+                            Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class='flex items-center max-lg:ml-auto space-x-4'>
+                <button type="button"
+                    class="bg-[#843d8d] hover:bg-[#843d8d] px-4 py-2 rounded text-white text-[15px] font-semibold flex items-center justify-center gap-2 lg:block hidden">
+                    Enquire Now <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+                <button id="toggleOpen" class='lg:hidden'>
+                    <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- header-end -->
+    <section class="bg-baner-index">
+        <div class="container flex items-center h-full">
+            <div>
+                <div>
+                    <h1
+                        class="font-inter text-[30px] md:text-[50px] lg:text-[70px] font-bold leading-[80px] tracking-[-0.01em] text-white break-words relative">
+                        Contact us
+                        <img src="./images/Group.png" alt="flower"
+                            class="w-[24px] h-[24px] object-contain mx-3 absolute top-[35px] left-[150px] md:left-[250px] lg:left-[350px]">
+                    </h1>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="bg-gray-50 text-gray-800">
         <!-- Contact <section> </section> -->
         <section class="lg:py-12 lg:px-4">
@@ -334,7 +426,99 @@
             </div>
         </section>
     </div>
+    <footer class="footer bg-[#0c54a0] text-white py-6 flex flex-col items-center relative">
+        <!-- Background Image -->
+        <div class="bg-img w-full h-full absolute top-[-19px] left-0 z-0 hidden md:block">
+            <img src="./footer-img/footer-bg.png" alt="Footer Background" class="w-full h-full ">
+        </div>
+        <!-- Background Image Responsive -->
+        <div class="bg-img w-full h-full absolute top-0 left-0 z-0 md:hidden block">
+            <img src="./footer-img/footer-bg-res.png" alt="Footer Background" class="w-full h-full">
+        </div>
 
+        <!-- Container -->
+
+        <div class="md:container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6 z-10 py-6">
+            <!-- Logo Section -->
+            <div class="flex flex-col items-center justify-center space-y-4 md:col-span-1 col-span-4">
+                <img src="./footer-img/footer-logo.png" alt="Podar Logo" class="w-32 md:w-40">
+                <!-- <p class="text-sm text-center md:text-left">Since 1927</p> -->
+            </div>
+
+            <!-- Quick Links 1 (on medium screens, it will be on the left) -->
+            <div class="space-y-4 md:col-span-1 col-span-2">
+                <h3 class="font-semibold text-lg md:text-xl">Quick Links</h3>
+                <ul class="space-y-2 text-sm md:text-base">
+                    <li><a href="#" class="hover:underline">About Us</a></li>
+                    <li><a href="#" class="hover:underline">Why Podar</a></li>
+                    <li><a href="#" class="hover:underline">Download Brochure</a></li>
+                    <li><a href="#" class="hover:underline">Transport Policy</a></li>
+                    <li><a href="#" class="hover:underline">Careers</a></li>
+                </ul>
+            </div>
+
+            <!-- Quick Links 2 (on medium screens, it will be on the right) -->
+            <div class="space-y-4 md:col-span-1 col-span-2">
+                <h3 class="font-semibold text-lg md:text-xl">Quick Links</h3>
+                <ul class="space-y-2 text-sm md:text-base">
+                    <li><a href="#" class="hover:underline">Admissions</a></li>
+                    <li><a href="#" class="hover:underline">Locations</a></li>
+                    <li><a href="#" class="hover:underline">FAQs</a></li>
+                    <li><a href="#" class="hover:underline">Blog</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section (on medium screens, will take full width) -->
+            <div class="space-y-4 md:col-span-1 col-span-4">
+                <h3 class="font-semibold text-lg md:text-xl">Keep in Touch</h3>
+                <ul class="space-y-2 text-sm md:text-base">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mr-3 mt-1"></i>
+                        85, Podar Centre, Chamarbaug Post Office Lane, Dr. Ambedkar Road, Parel, Mumbai-400042,
+                        Maharashtra, India
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope mr-3"></i>
+                        Admissions@podar.org
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-phone mr-3"></i>
+                        <a href="tel:02243330000" class="hover:underline">022 43330000</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex md:space-x-6 space-x-2 mt-8 md:mt-0 z-10">
+            <a href="#"
+                class="bg-white text-black hover:text-blue-500 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                aria-label="Facebook">
+                <i class="fab fa-facebook-f text-lg md:text-xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white text-black hover:text-pink-500 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                aria-label="Instagram">
+                <i class="fab fa-instagram text-lg md:text-xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white text-black hover:text-blue-400 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                aria-label="Twitter">
+                <i class="fab fa-twitter text-lg md:text-xl"></i>
+            </a>
+            <a href="#"
+                class="bg-white text-black hover:text-red-500 rounded-full p-2 md:p-3 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 transition-transform transform hover:scale-110 hover:shadow-lg"
+                aria-label="YouTube">
+                <i class="fab fa-youtube text-lg md:text-xl"></i>
+            </a>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="flex mt-4 z-10">
+            <p class="text-sm text-center w-full p-2">Copyright 2022 | Privacy Policy | Terms & Conditions</p>
+        </div>
+
+    </footer>
 </body>
 
 </html>
